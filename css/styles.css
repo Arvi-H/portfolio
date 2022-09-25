@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Home Page */
+.container {
+    padding: 0;
+    margin-top: -50px;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Nav */
+nav {
+    z-index: 1000;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.collapse {
+    justify-content: flex-end;
+}
+/* End of Nav */
+
+#home-page_info {
+    margin-left: 5%;
+}
+
+#info_welcome {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+#home-page_info p {
+    font-size: 19px;
+    font-weight: 200;
+}
+
+#info_description {
+    margin-bottom: 0px;
+}
+
+#email-btn {
+    color: #ffffff;
+    background-color: rgb(62, 123, 226);
+    padding: 8px 17px;
+    width: 184px;
+    border-radius: 20px;
+}
+
+#airplane {
+    margin-bottom: 4px;
+}
+
+#email-btn a {
+    /* float: right; */
+    text-decoration: none;
+    
+    color: inherit;
+    background-color: inherit;
+    border: 0;
+    font-size: 1.1em;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+#email-btn:hover {
+    cursor: pointer;
+    background-color: rgb(132, 182, 167);
+}
+ 
