@@ -2,12 +2,13 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* Home Page */
 .container {
     padding: 0;
-    margin-top: -50px;
+    margin-top: -45px;
     height: 100%;
 
     display: flex;
@@ -23,7 +24,9 @@ nav {
 .nav-link {
     color: rgb(0, 0, 0);
     font-size: 18px;
-    padding-top: 15px;
+    padding-top: 10px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: 300;
 }
 
 .collapse {
@@ -32,7 +35,7 @@ nav {
 /* End of Nav */
 
 #home-page_info {
-    margin-left: 5%;
+    padding: 7%;
 }
 
 #info_welcome {
@@ -78,4 +81,45 @@ nav {
     cursor: pointer;
     background-color: rgb(132, 182, 167);
 }
- 
+/* End of Home Page */
+
+/* Contact Page */
+#contact-form-container {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0 25%;
+    margin-top: -45px;
+}
+
+.contact-form-text {
+    width: 100%;
+    margin: 2% 0;
+    border: 0;
+    border-bottom: 1px solid;
+    background: white;
+    padding: 15px 5px;
+}
+
+#contact-form__submit-btn {
+    float: right;
+    text-decoration: none;
+    
+    color: #000000;
+    background-color: white;
+    
+    font-size: 1.15em;
+    font-weight: 300;
+    border: 0;
+    
+    cursor: pointer;
+}
+
+#contact-form__submit-btn:hover {
+    color: gray;
+}
+/* End of Contact Page */
