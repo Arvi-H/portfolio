@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden;
 }
 
 /* Home Page */
@@ -66,7 +65,6 @@ nav {
 }
 
 #email-btn a {
-    /* float: right; */
     text-decoration: none;
     
     color: inherit;
@@ -123,3 +121,88 @@ nav {
     color: gray;
 }
 /* End of Contact Page */
+
+/* Projects */
+#projects_container {
+    margin-top: 1%;
+    padding: 1%;
+    padding-top: 0;
+}
+
+.projects_heading {
+    margin-left: 30px;
+}
+
+.project-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    margin: 20px;
+    width: 300px;
+     
+    margin-right: 2%;
+    background: #F8F8F8; 
+    border-radius: 20px;
+
+	box-shadow: 11px 12px 15px rgba(0, 0, 0, 0.2)  ; 
+}
+
+.project-card img {
+    border-radius: 20px 20px 0 0;  
+    width: 100%;
+}
+
+.card_bottom-half { 
+    border-radius: 0 0 20px 20px;  
+    padding-bottom: 20px;
+}
+
+.card_title {
+    padding-top: 15px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card_description {
+    margin-top: -15px;
+    padding: 10px;
+    padding-top: 0;
+
+    font-size: 15px;
+}
+/* End of Projects */
+
+/* Resume */
+
+.resume-container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* End of Resume */
+
+/* Reseponsive */
+@media only screen and (max-width: 1430px){
+    .project-card{ 
+        flex-basis: 33%; 
+    }
+
+    #contact-form-container {
+        margin: 0 10%;
+    }
+
+}
+
+@media only screen and (max-width: 769px){
+    .project-card {
+        flex-basis: 50%; 
+    }
+}
+  
