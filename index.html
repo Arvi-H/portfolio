@@ -1,54 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- General -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-
     <title>Arvi Haxhillari</title>
+    <link rel="icon" type="image/x-icon" href="/images/arvi-pic.png">
+
+
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/be587241f4.js" crossorigin="anonymous"></script>
     
+    <!-- SEO -->
+    <!-- <link rel="shortcut icon" type="image/png" href="./imgs/favicon.png"> -->
+    <meta author="Arvi Haxhillari">
+    <meta name="description" content="I'm Arvi, a software engineer based in the Silicon Slope. Currently working at SimpleNexus and studying Computer Science at BYU."/>
+    
+    <!-- Facebook Tags -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Arvi Haxhillari" />
+    <meta property="og:url" content="http://arvih.com/" />
+    <meta property="profile:first_name" content="Arvi" />
+    <meta property="profile:last_name" content="Haxhillari" />
 </head>
 
 <body>
-    <!-- Bootstrap Nav Bar -->      
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <div class="home-page">
+        <div class="home-page_upper-info">
+            <img id="my-pic" src="./images/arvi-pic.png" alt="my-pic">
             
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" href="index.html" style="padding-right: 30px">Home</a>
-                    <a class="nav-link" href="resume.html" style="padding-right: 30px">Resume</a>
-                    <a class="nav-link" href="projects.html" style="padding-right: 30px">Projects</a>
-                    <a class="nav-link" href="contact.html">Contact</a>
+            <div id="icons">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+        <div class="home-page_main-info">
+            <h1 id="info_welcome">Welcome.</h1>
+            <p class="info_description">I'm Arvi, a software engineer based in the Silicon Slope.</p>
+            <p class="info_description" id="bottom_line">Currently working at SimpleNexus and studying Computer Science at BYU.</p>
+            
+            <div id="email-btn">
+                <a href="mailto:arvihaxhillari1@gmail.com" id="email-container">
+                    <img src="./images/paper-airplane.png" alt="airplane" id="airplane"></img>
+                    <p id="email">arvih@byu.edu</p>
+                </a>
+                <!-- <a href="mailto:arvihaxhillari1@gmail.com" id="email-address">arvih@byu.edu</a> -->
+            </div>
+        </div>
+        <i class="fa-solid fa-angle-down"></i>
+    </div>
+    
+    <!-- todo timeline + dots -->
+    <div class="experience-page"> 
+        <div class="page_description">
+            <h1 class="title">I learn a little bit about everything.</h1>
+            <p class="description">Most of the time it's engineering or finance related. I'm a student of all things interesting, a real estate investor, an INTJ, and a Republican.</p>
+        </div>
+        
+        <div class="experience-page_item">
+            <div class="item-outer">
+                <img src="" alt="" class="item_icon">
+                <p class="item-title">Lorem, ipsum</p>
+            </div>
+            <div class="item-inner">
+                <p class="item-date">Lorem, ipsum.</p>
+                <p class="item-description">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="skills-page">
+        <div class="page_description">
+            <h1 class="title">Jack of some trades. Master of none.</h1>
+            <p class="description">Can build full-stack web and iOS products with modern technologies. Thoughtful interfaces and smooth user experience included (most of the time).</p>
+        </div>
+
+        <div class="skills-page_content">
+            <div class="skills-page_item">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="skills-page_item">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="skills-page_item">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="skills-page_item">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            <div class="skills-page_item">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="interests-page">
+        <div class="page_description">
+            <h1 class="title">Help me retire at 35.</h1>
+            <p class="description">Goal is to not have to rely on a W-2 income by 2030. I'm happily exposed to the real estate and equity markets, while drowning in good debt.</p>
+        </div>
+
+        <div class="interests-page_content">
+            <div class="interests-page_item">
+                <img src="" alt="" class="item_image">
+                <div class="item_bottom-half">
+                    <p class="item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="interests-page_item">
+                <img src="" alt="" class="item_image">
+                <div class="item_bottom-half">
+                    <p class="item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <div class="interests-page_item">
+                <img src="" alt="" class="item_image">
+                <div class="item_bottom-half">
+                    <p class="item_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
             </div>
         </div>
-    </nav>
-    
-    <div class="container" id="home">
+    </div>
 
-        <div id="home-page_info">
-            <h1 id="info_welcome">Welcome.</h1>
-            <p id="info_description">I'm Arvi, a software engineer based in the Silicon Slope.</p>
-            <p>Currently studying Computer Science at BYU and working at the BYU STaPL.</p>
-            <div id="email-btn">
-                <a href="mailto:arvihaxhillari1@gmail.com">
-                    <img src="./images/paper-airplane.png" alt="airplane" height="17px" id="airplane"></img>
-                </a>
-                <a href="mailto:arvihaxhillari1@gmail.com">arvih@byu.edu</a>
+    <div class="projects-page">
+        <div class="page_description">
+            <h1 class="title">Help me retire at 35.</h1>
+            <p class="description">Goal is to not have to rely on a W-2 income by 2030. I'm happily exposed to the real estate and equity markets, while drowning in good debt.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="" alt="" class="card_image">
+            <div class="card_bottom-half">
+                <p class="card_title">FRC 2019 Robot</p>
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             </div>
-            <img src="./images/down-arrow.png" alt="down arrow" height="30px">
+        </div>
+        <div class="project-card">
+            <img src="" alt="" class="card_image">
+            <div class="card_bottom-half">
+                <p class="card_title">FRC 2019 Robot</p>
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="" alt="" class="card_image">
+            <div class="card_bottom-half">
+                <p class="card_title">FRC 2019 Robot</p>
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="" alt="" class="card_image">
+            <div class="card_bottom-half">
+                <p class="card_title">FRC 2019 Robot</p>
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="" alt="" class="card_image">
+            <div class="card_bottom-half">
+                <p class="card_title">FRC 2019 Robot</p>
+                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
         </div>
     </div>
-        
-    <script src="https://kit.fontawesome.com/be587241f4.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <button onclick="darkModeSwitch()">Toggle dark mode</button>
+    <script type="text/javascript" src="./javascript/main.js"></script>
 </body>
 </html>
