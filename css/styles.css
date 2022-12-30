@@ -2,6 +2,17 @@
 body {
     padding: 0;
     margin: 0; 
+    
+    width: 80%;
+    position: relative;
+    
+    top: 0%;
+    left: 50%;
+    
+    /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+    transform: translate(-50%, 0%);
+    
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .dark-mode {
@@ -17,12 +28,11 @@ body {
 
 .home-page_upper-info {
     margin-top: 60px;
-    width: 80%;
     
     position: relative;
     top: 0%;
     left: 50%;
-
+    
     /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
     transform: translate(-50%, 0%);
 } 
@@ -49,11 +59,9 @@ body {
     position: relative;
     top: 37%;
     left: 0%;
-
+    
     /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
     transform: translate(0%, -37%);
-
-    margin-left: 11%;
 }
 
 #info_welcome {
@@ -65,7 +73,7 @@ body {
 
 .info_description {
     font-size: 22px;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Open Sans, Helvetica Neue, sans-serif;
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 150;
 
     margin-top: 5px;
@@ -75,7 +83,7 @@ body {
     margin-top: -15px;
 }
 
-#email-btn {
+.main-btn {
     color: #ffffff;
     background-color: #207de9;
     
@@ -85,7 +93,7 @@ body {
     border-radius: 5px;
 }
 
-#email-container {
+.main-btn_container {
     position: absolute;
     margin: 0;
     
@@ -95,7 +103,7 @@ body {
     text-decoration: none;
 }
 
-#airplane { 
+.main-btn_icon { 
     float: left;
     height: 22px;
     margin-left: 20px;
@@ -103,14 +111,14 @@ body {
     margin-right: 15px;
 }
 
-#email {
+.main-btn_text {
     color: white;
     font-size: 1.3em;
 
     margin-top: 12px;
 }  
 
-#email-btn:hover {
+.main-btn:hover {
     cursor: pointer;
     background-color: rgb(132, 182, 167);
 } 
@@ -126,3 +134,95 @@ body {
     font-size: 25px;
 }
 /* End of Home Page */
+
+/* Experience Page */
+.description {
+    width: 65%;
+}
+
+.title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.5em;
+    font-weight: 150;
+    margin-top: 10px;
+}
+
+.experience-page_item p {
+    font-weight: 300;
+}
+
+.item_icon {
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.item-title {
+    font-size: 16px;
+}
+
+.item-inner {
+    margin-top: -5px;
+}
+
+.item-date {
+    float: left;
+    margin: 0;
+    margin-right: 5px;
+
+    background-color: #ededed;
+    padding: 3px 10px;
+    border-radius: 7px;
+
+    /* padding: 0.25em 0.5em; */
+    border-radius: 5px;
+    margin-right: 0.5em;
+
+    font-size: 11px; 
+
+    font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+
+.item-description {
+    font-size: 14px;
+    margin: 0;
+}
+
+.experience-page_item {
+    margin-bottom: 40px;
+}
+ 
+
+#resume-btn {
+    width: 165px;
+    height: 43px;
+    margin-bottom: 100px;
+}
+
+#resume-btn_container {
+    width: 165px;
+    height: 43px;
+}
+
+#arrow { 
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+#resume-btn_text {
+    margin-top: 9.4px;
+}  
+
+#resume-btn:hover {
+    cursor: pointer;
+    background-color: rgb(132, 182, 167);
+} 
+
+/* End of Experience Page */
