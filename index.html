@@ -164,71 +164,164 @@
         
         <div class="interests-page_content">
             <div class="interests-page_item">
-                <img src="./images/sandbox.png" alt="" class="item-image">
+                <div class="item-image" id="item-1"></div>
+                <!-- <img src="./images/sandbox.png" alt="" class="item-image"> -->
                 <div class="item_bottom-half">
                     <p class="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos assumenda dolores, pariatur sed aperiam amet.</p>
                 </div>
             </div>
             <div class="interests-page_item middle-card">
-                <img src="./images/stapl.jpg" alt="" class="item-image">
+                <div class="item-image" id="item-2"></div>
+                <!-- <img src="./images/stapl.jpg" alt="" class="item-image"> -->
                 <div class="item_bottom-half">
                     <p class="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos assumenda dolores, pariatur sed aperiam amet.</p>
                 </div>
             </div>
             <div class="interests-page_item">
-                <img src="./images/robot.JPG" alt="provotypes" class="item-image">
+                <div class="item-image" id="item-3"></div>
+                <!-- <img src="./images/robot.JPG" alt="provotypes" class="item-image"> -->
                 <div class="item_bottom-half">
                     <p class="item_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos assumenda dolores, pariatur sed aperiam amet.</p>
                 </div>
             </div>
         </div>
     </div>
-
+    
     <div class="projects-page">
         <div class="page_description">
             <h1 class="title">“What'd you do over the weekend?”</h1>
             <p class="description">Things I made when not at work. Sometimes it's to scratch an itch. Other times it's just to learn something new.</p>
         </div>
+        <div id="carousel">
+            <div class="card"> <!-- 1 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <p class="card_title">Facebook Bot Detector</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 2 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <p class="card_title">Facebook Data Scraper</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 3 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <p class="card_title">Space Arcade</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 4 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <p class="card_title">Lexer Analysis and Parsing</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 5 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <!-- maze pic online graphic -->
+                        <p class="card_title">3D Maze</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 6 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <!-- maze pic online graphic -->
+                        <p class="card_title">Domino's Pizza Ordering Bot</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 7 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <!-- maze pic online graphic -->
+                        <p class="card_title">Y Hack</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 8 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <!-- maze pic online graphic -->
+                        <p class="card_title">FRC - 2020 Inifinite Recharge Robot</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 9 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <!-- maze pic online graphic -->
+                        <p class="card_title">FRC - 2019 Destination: Deep Space Robot </p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card"> <!-- 10 -->
+                <div class="card-container">
+                    <img src="./images/provotypes.png" alt="" class="card_image">
+                    <div class="card_bottom-half">
+                        <!-- maze pic online graphic -->
+                        <p class="card_title">Personal Portfolio</p>
+                        <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+          <!-- Previous and next buttons -->
+          <div class="carousel-tools">
+              <!-- Prev Btn -->
+              <a id="prev" class="btn">&#10094;</a>
+              
+              <!-- Dots indicating which card you are on -->
+              <div id="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              
+              <!-- Next Btn -->
+              <a id="next" class="btn">&#10095;</a>
+          </div>
+          
+    </div>
 
-        <div class="project-card">
-            <img src="" alt="" class="card_image">
-            <div class="card_bottom-half">
-                <p class="card_title">FRC 2019 Robot</p>
-                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="" alt="" class="card_image">
-            <div class="card_bottom-half">
-                <p class="card_title">FRC 2019 Robot</p>
-                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="" alt="" class="card_image">
-            <div class="card_bottom-half">
-                <p class="card_title">FRC 2019 Robot</p>
-                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="" alt="" class="card_image">
-            <div class="card_bottom-half">
-                <p class="card_title">FRC 2019 Robot</p>
-                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
-        <div class="project-card">
-            <img src="" alt="" class="card_image">
-            <div class="card_bottom-half">
-                <p class="card_title">FRC 2019 Robot</p>
-                <p class="card_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
-        </div>
+    <div class="footer-info">
+        <p id="copyright">Arvi Haxhillari © 2023</p>
+        <button id="switch" onclick="darkModeSwitch()">Toggle dark mode</button>
     </div>
 
     <!-- Javascript -->
-    <button onclick="darkModeSwitch()">Toggle dark mode</button>
     <script type="text/javascript" src="./javascript/main.js"></script>
 </body>
 </html>

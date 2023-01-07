@@ -231,6 +231,7 @@ body {
 
 .skills-page_content {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 100px;
 }
 
@@ -246,6 +247,7 @@ body {
     width: 120px;
 
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .skills-page_item p {
@@ -263,12 +265,13 @@ body {
 /* Interests Page */
 .interests-page_content {
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .interests-page_item {
     width: 350px;
     margin-right: 50px;
+    margin-bottom: 50px;
     
     border-radius: 20px;
     overflow: hidden;
@@ -277,7 +280,22 @@ body {
 }
 
 .item-image {
-    width: 100%;
+    height: 400px;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+#item-1 {
+    background-image: url("../images/sandbox.png");
+}
+
+#item-2 {
+    background-image: url("../images/stapl.jpg");
+}
+
+#item-3 {
+    background-image: url("../images/robot.jpg");
 }
 
 .item_description {
@@ -291,9 +309,117 @@ body {
     padding: 20px 20px 30px 20px;
 
 }
+/* End of Interests Page */
 
-.item_bottom-half {
+/* Projects Page */
+#carousel {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+
+    margin-bottom: 100px;
+  }
+  
+  .card {
+    scroll-snap-align: start; 
+    flex: 0 0 33.3333%;
+  }
+  
+  .card-container {
+    margin: 5%;
+
+    margin-bottom: 50px;
+    height: 370px; 
+
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 6%), 0 31px 30px -18px rgb(0 0 0 / 16%);
+  }
+  
+  #dots {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 5px;
+    background-color: #e4e4e4;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #858585;
+  }
+  
+  .card_image {
+    width: 100%;
+    margin-top: -70%;
+  }
+
+  .carousel-tools {
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  .btn {
+    background-color: #ebebeb;
+    color: #111213;
+    opacity: .5;
+
+    width: 30px;
+    height: 25px;
+
+    font-size: 15px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 5px;
     
+    cursor: pointer;
+  } 
+
+  .footer-info {
+    text-align: center;
+  }
+
+  #copyright {
+    font-size: 14px;
+    font-weight: 300;
 }
 
-/* End of Interests Page */
+#switch {
+    border: none;
+    background-color: white;
+
+    font-size: 14px;
+    font-weight: 300;
+
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 1100px) {
+    .card {
+        flex: 0 0 100%;
+    }
+
+    .interests-page_content {
+        flex-wrap: wrap;
+
+    }
+
+    .interests-page_item {
+        width: 90%; 
+    }
+
+}
+  
+/* End of Projects Page */
