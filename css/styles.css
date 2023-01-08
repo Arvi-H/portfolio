@@ -14,11 +14,6 @@ body {
     
     font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-.dark-mode {
-    background-color: rgb(17, 17, 17);
-    color: white;
-}
 /* End of General */
 
 /* Home Page */
@@ -135,11 +130,7 @@ body {
 }
 /* End of Home Page */
 
-/* Experience Page */
-.description {
-    width: 65%;
-}
-
+/* Experience Page */ 
 .title {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
@@ -148,6 +139,7 @@ body {
 }
 
 .description {
+    width: 65%;
     font-size: 1.5em;
     font-weight: 150;
     margin-top: 10px;
@@ -246,8 +238,8 @@ body {
     padding: 12px 7px;
     width: 120px;
 
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .skills-page_item p {
@@ -320,14 +312,14 @@ body {
     position: relative;
 
     margin-bottom: 100px;
-  }
+}
   
-  .card {
+.card {
     scroll-snap-align: start; 
     flex: 0 0 33.3333%;
-  }
+}
   
-  .card-container {
+.card-container {
     margin: 5%;
 
     margin-bottom: 50px;
@@ -336,15 +328,15 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 6%), 0 31px 30px -18px rgb(0 0 0 / 16%);
-  }
+}
   
-  #dots {
+#dots {
     display: flex;
     justify-content: center;
     margin: 20px 0;
-  }
+}
   
-  .dot {
+.dot {
     height: 5px;
     width: 5px;
     margin: 0 5px;
@@ -352,25 +344,56 @@ body {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
-  }
+}
   
-  .active {
+.active {
     background-color: #858585;
-  }
-  
-  .card_image {
-    width: 100%;
-    margin-top: -70%;
-  }
+}
 
-  .carousel-tools {
+.card-image {
+    height: 250px;
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+
+.card_bottom-half {
+    padding: 20px 15px;
+}
+
+.card_title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.card_description {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+#card-1 { background-image: url("../images/bots.png"); }
+#card-2 { background-image: url("../images/scraper.png"); }
+#card-3 { background-image: url("../images/arcade1.png"); }
+#card-4 { background-image: url("../images/lexer.png"); }
+#card-5 { background-image: url("../images/maze.png"); }
+#card-6 { background-image: url("../images/pizza.png"); }
+#card-7 { background-image: url("../images/hack.png"); }
+#card-8 { background-image: url("../images/first2020.png"); }
+#card-9 { background-image: url("../images/first2019.png"); }
+#card-10 { background-image: url("../images/site.png"); }
+
+.carousel-tools {
     margin-top: -100px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
-  }
+}
 
-  .btn {
+.btn {
     background-color: #ebebeb;
     color: #111213;
     opacity: .5;
@@ -384,13 +407,13 @@ body {
     padding-top: 5px;
     
     cursor: pointer;
-  } 
+} 
 
-  .footer-info {
+.footer-info {
     text-align: center;
-  }
+}
 
-  #copyright {
+#copyright {
     font-size: 14px;
     font-weight: 300;
 }
@@ -413,13 +436,164 @@ body {
 
     .interests-page_content {
         flex-wrap: wrap;
-
+        justify-content: center;
     }
 
     .interests-page_item {
-        width: 90%; 
+        width: 95%; 
+        margin-right: 0px;
     }
 
+    .description {
+       width: 90%;
+    }
+
+    .carousel-tools {
+        margin-top: -130px;
+    }
 }
-  
+
+@media (max-width: 700px) {
+    /* Home Page */
+    .fa-solid {
+        top: 55%;
+        transform: translate(-50%, -55%);
+        font-size: 15px;
+    }
+    
+    #my-pic {
+        width: 40px;
+    }
+    
+    .fa-brands {
+        font-size: 17px;
+    }
+
+    #info_welcome {
+        font-size: 50px;
+    }
+
+    .info_description {
+        font-size: 15px;
+        font-weight: 250;   
+    }
+
+    #bottom_line {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .main-btn { 
+        width: 148px;
+        height: 32px;
+    }
+
+    .main-btn_container {
+        width: 148px;
+        height: 32px;
+    }
+    
+    .main-btn_icon { 
+        height: 15px;
+        margin-left: 12px;
+        margin-top: 9px;
+        margin-right: 7px;
+    }
+
+    .main-btn_text {
+        font-size: 15px;
+        margin-top: 7px;
+    }  
+    /* End of Home Page */
+
+    /* Experience Page */
+    .experience-page {
+        margin-top: -65px;
+    }
+
+    .title {
+        font-size: 1.75em;
+    }
+    
+    .description {
+        font-size: 0.9em;
+        font-weight: 300;
+        width: 100%;
+    }
+
+    .item_icon {
+        width: 16px;
+    }
+    
+    .item-title {
+        font-size: 13px;
+    }
+
+    .item-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-date { 
+        width: 105px;
+        padding: 3px 5px;
+        margin-top: 1px;
+    }
+
+    .item-description {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+ 
+    #resume-btn {
+        width: 110px;
+        height: 32px;
+        margin-bottom: 70px;
+    }
+    
+    #resume-btn_container {
+        width: 110px;
+        height: 32px;
+    }
+    
+    #arrow { 
+        margin-left: 5px;
+        margin-top: 9px;
+    }
+    
+    #resume-btn_text {
+        margin-top: 6.5px;
+    }  
+    /* End of Experience Page */
+
+    /* Skills Page */
+    .skills-page_content { 
+        margin-bottom: 70px;
+    }
+    /* End of Skills Page */
+    
+    /* Interests Page */
+    .interests-page_item {
+        width: 350px; 
+        margin-bottom: 30px;
+    }
+    /* End of Interests Page */
+    
+    /* Projects Page */
+
+    /* End of Projects Page */
+}
+   
 /* End of Projects Page */
+
+/* Dark Mode */
+.dark-mode {
+    background-color: rgb(17, 17, 17);
+    color: white;
+}
+
+.dark-mode_cards {
+    background-color: #292c2e;
+}
+
+/* End of Dark Mode */
