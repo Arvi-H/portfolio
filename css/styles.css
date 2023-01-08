@@ -456,8 +456,9 @@ body {
 @media (max-width: 700px) {
     /* Home Page */
     .fa-solid {
+        left: 500%;
         top: 85%;
-        transform: translate(-50%, -85%);
+        transform: translate(-500%, -85%);
         font-size: 15px;
     }
     
