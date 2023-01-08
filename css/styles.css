@@ -288,6 +288,7 @@ body {
 
 #item-3 {
     background-image: url("../images/robot.jpg");
+
 }
 
 .item_description {
@@ -455,11 +456,8 @@ body {
 
 @media (max-width: 700px) {
     /* Home Page */
-    .fa-solid {
-        left: 500%;
-        top: 85%;
-        transform: translate(-500%, -85%);
-        font-size: 15px;
+    .fa-solid { 
+        font-size: 0px;
     }
     
     #my-pic {
