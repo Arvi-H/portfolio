@@ -17,7 +17,10 @@ function darkModeSwitch() {
       dates[i].classList.toggle("dark-mode_cards");
     }
     
-    
+    // var toggle = document.getElementsByClassName("switch");
+    // for (var i = 0; i < toggle.length; i++) {
+    //   toggle[i].classList.toggle("dark-mode_switch");
+    // }
 }
 
 // JavaScript for the carousel
