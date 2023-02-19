@@ -1,27 +1,39 @@
 function darkModeSwitch() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-      
-    var bigCards = document.getElementsByClassName("item_bottom-half");
-    for (var i = 0; i < bigCards.length; i++) {
-      bigCards[i].classList.toggle("dark-mode_cards");
-    }
-    
-    var smallCards = document.getElementsByClassName("card_bottom-half");
-    for (var i = 0; i < smallCards.length; i++) {
-      smallCards[i].classList.toggle("dark-mode_cards");
-    }
-    
-    var dates = document.getElementsByClassName("item-date");
-    for (var i = 0; i < dates.length; i++) {
-      dates[i].classList.toggle("dark-mode_cards");
-    }
-    
-    // var toggle = document.getElementsByClassName("switch");
-    // for (var i = 0; i < toggle.length; i++) {
-    //   toggle[i].classList.toggle("dark-mode_switch");
-    // }
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+  var bigCards = document.getElementsByClassName("item_bottom-half");
+  for (var i = 0; i < bigCards.length; i++) {
+    bigCards[i].classList.toggle("dark-mode_cards");
+  }
+
+  var smallCards = document.getElementsByClassName("card_bottom-half");
+  for (var i = 0; i < smallCards.length; i++) {
+    smallCards[i].classList.toggle("dark-mode_cards");
+  }
+
+  var dates = document.getElementsByClassName("item-date");
+  for (var i = 0; i < dates.length; i++) {
+    dates[i].classList.toggle("dark-mode_cards");
+  }
+
+  var toggle = document.getElementsByClassName("switch");
+  for (var i = 0; i < toggle.length; i++) {
+    toggle[i].classList.toggle("dark-mode_switch");
+  }
 }
+
+function checkTime() {
+  var date = new Date();
+  var hour = date.getHours();
+  var isDarkModeActive = document.body.classList.contains("dark-mode");
+  
+  if (hour >= 18 && !isDarkModeActive) {
+    darkModeSwitch();
+  }
+}
+
+checkTime();
 
 // JavaScript for the carousel
 const carousel = document.querySelector("#carousel");

@@ -594,4 +594,9 @@ body {
     background-color: #292c2e;
 }
 
+.dark-mode_switch {
+    color: white;
+    background-color: rgb(17, 17, 17) !important;
+}
+
 /* End of Dark Mode */
