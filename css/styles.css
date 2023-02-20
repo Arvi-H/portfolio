@@ -120,13 +120,13 @@ body {
  
 .fa-solid {
     position: relative;
-    top: 61%;
+    top: 54%;
     left: 50%;
 
     /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
-    transform: translate(-50%, -61%);
+    transform: translate(-50%, -54%);
 
-    font-size: 25px;
+    font-size: 22px;
 }
 /* End of Home Page */
 
@@ -279,15 +279,15 @@ body {
 }
 
 #item-1 {
-    background-image: url("../images/sandbox.png");
+    background-image: url("../images/sandbox.jpg");
 }
 
 #item-2 {
-    background-image: url("../images/stapl.jpg");
+    background-image: url("../images/stapl2.jpg");
 }
 
 #item-3 {
-    background-image: url("../images/provotypesRobot.png");
+    background-image: url("../images/provotypesRobot2.jpg");
 }
 
 .item_description {
@@ -580,6 +580,19 @@ body {
     /* Projects Page */
 
     /* End of Projects Page */
+}
+
+@media (min-width: 1600px) {
+    .fa-solid {
+        position: relative;
+        top: 63%;
+        left: 50%;
+
+        /* shifts or translate the center point (X, Y) by (X - 50% of outerWidth, Y - 50% of outerHeight) */
+        transform: translate(-50%, -63%);
+
+        font-size: 25px;
+    }
 }
    
 /* End of Projects Page */

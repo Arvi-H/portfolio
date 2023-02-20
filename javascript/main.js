@@ -28,7 +28,7 @@ function checkTime() {
   var hour = date.getHours();
   var isDarkModeActive = document.body.classList.contains("dark-mode");
   
-  if (hour >= 18 && !isDarkModeActive) {
+  if ((hour >= 18 || hour <= 6) && !isDarkModeActive) {
     darkModeSwitch();
   }
 }
