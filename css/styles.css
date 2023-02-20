@@ -576,10 +576,6 @@ body {
         margin-bottom: 30px;
     }
     /* End of Interests Page */
-    
-    /* Projects Page */
-
-    /* End of Projects Page */
 }
 
 @media (min-width: 1600px) {
@@ -594,7 +590,6 @@ body {
         font-size: 25px;
     }
 }
-   
 /* End of Projects Page */
 
 /* Dark Mode */
@@ -611,5 +606,4 @@ body {
     color: white;
     background-color: rgb(17, 17, 17) !important;
 }
-
 /* End of Dark Mode */
