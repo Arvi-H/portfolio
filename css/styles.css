@@ -82,7 +82,7 @@ body {
     color: #ffffff;
     background-color: #207de9;
     
-    width: 219px;
+    width: 255px;
     height: 48px;
     
     border-radius: 5px;
@@ -92,7 +92,7 @@ body {
     position: absolute;
     margin: 0;
     
-    width: 219px;
+    width: 255px;
     height: 48px;
 
     text-decoration: none;
@@ -101,7 +101,7 @@ body {
 .main-btn_icon { 
     float: left;
     height: 22px;
-    margin-left: 20px;
+    margin-left: 15px;
     margin-top: 12px;
     margin-right: 15px;
 }
@@ -169,7 +169,8 @@ body {
     margin-right: 5px;
 
     background-color: #ededed;
-    padding: 3px 10px;
+    padding: 3px 7px;
+    padding-bottom: 4px;
     border-radius: 7px;
 
     /* padding: 0.25em 0.5em; */
@@ -482,18 +483,18 @@ body {
     }
 
     .main-btn { 
-        width: 148px;
+        width: 185px;
         height: 32px;
     }
 
     .main-btn_container {
-        width: 148px;
+        width: 185px;
         height: 32px;
     }
     
     .main-btn_icon { 
         height: 15px;
-        margin-left: 12px;
+        margin-left: 10px;
         margin-top: 9px;
         margin-right: 7px;
     }
@@ -533,8 +534,9 @@ body {
     }
 
     .item-date { 
-        width: 105px;
+        width: 116px;
         padding: 3px 5px;
+        padding-left: 7px;
         margin-top: 1px;
     }
 
