@@ -360,6 +360,7 @@ body {
 
 .card_bottom-half {
     padding: 20px 15px;
+    padding-top: 10px;
 }
 
 .card_title {
@@ -367,7 +368,7 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 21px;
-}
+} 
 
 .card_description {
     margin-top: 0;
@@ -376,16 +377,18 @@ body {
     line-height: 21px;
 }
 
-#card-1 { background-image: url("../images/bots.png"); }
-#card-2 { background-image: url("../images/scraper.png"); }
-#card-3 { background-image: url("../images/arcade1.png"); }
-#card-4 { background-image: url("../images/lexer.png"); }
-#card-5 { background-image: url("../images/maze.png"); }
-#card-6 { background-image: url("../images/pizza.png"); }
-#card-7 { background-image: url("../images/hack.png"); }
-#card-8 { background-image: url("../images/first2020.png"); }
-#card-9 { background-image: url("../images/first2019.png"); }
-#card-10 { background-image: url("../images/site.png"); }
+#card-1 { background-image: url("../images/hackathonX.jpeg"); }
+#card-2 { background-image: url("../images/acm2.png"); }
+#card-3 { background-image: url("../images/creators2.png"); }
+#card-4 { background-image: url("../images/19.png"); }
+#card-5 { background-image: url("../images/lexer.png"); }
+#card-6 { background-image: url("../images/fam-map.png"); }
+#card-7 { background-image: url("../images/cc.jpeg"); }
+#card-8 { background-image: url("../images/Screenshot\ 2023-09-02\ at\ 6.52.45\ PM.png"); }
+#card-9 { background-image: url("../images/maze.png"); }
+#card-10 { background-image: url("../images/BJJ-1.jpg"); }
+#card-11 { background-image: url("../images/first2019.png"); }
+#card-12 { background-image: url("../images/first2020.png"); }
 
 .carousel-tools {
     margin-top: -100px;
